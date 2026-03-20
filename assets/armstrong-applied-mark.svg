@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Armstrong Applied mark</title>
+  <desc id="desc">Stylized A with circuitry and pulse line for Armstrong Applied.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e1f" />
+      <stop offset="100%" stop-color="#111214" />
+    </linearGradient>
+    <linearGradient id="metal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f5f5" />
+      <stop offset="100%" stop-color="#8b8d93" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="104" fill="url(#bg)" />
+  <g stroke="url(#metal)" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#shadow)">
+    <path d="M64 228h64l16-28 20 56 22-78 22 50h34" stroke-width="10" />
+    <path d="M166 190c0-30 24-54 54-54" stroke-width="9" opacity="0.8" />
+    <path d="M166 266c0 30 24 54 54 54" stroke-width="9" opacity="0.8" />
+    <path d="M204 366L272 108l68 258" stroke-width="18" />
+    <path d="M228 276h90" stroke-width="16" />
+    <path d="M276 182l74 74" stroke-width="9" />
+    <path d="M250 314l98 48" stroke-width="8" opacity="0.9" />
+    <path d="M350 182l54 28" stroke-width="7" />
+    <path d="M350 254h78" stroke-width="7" />
+    <path d="M342 336l66 36" stroke-width="7" />
+    <path d="M300 222v134" stroke-width="8" />
+    <path d="M256 352h92" stroke-width="7" />
+    <path d="M300 388v34" stroke-width="7" />
+  </g>
+  <g fill="url(#metal)">
+    <circle cx="350" cy="182" r="8" />
+    <circle cx="404" cy="210" r="7" />
+    <circle cx="428" cy="254" r="7" />
+    <circle cx="348" cy="336" r="7" />
+    <circle cx="408" cy="372" r="7" />
+    <circle cx="300" cy="222" r="7" />
+    <circle cx="300" cy="388" r="7" />
+    <circle cx="256" cy="352" r="7" />
+    <circle cx="348" cy="352" r="7" />
+  </g>
+</svg>

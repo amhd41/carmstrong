@@ -318,6 +318,46 @@ h3 {
   padding: 24px;
 }
 
+.consulting-card {
+  display: grid;
+  gap: 18px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  background: linear-gradient(135deg, rgba(20, 20, 22, 0.97), rgba(36, 24, 21, 0.95));
+  border-radius: var(--radius-lg);
+  color: #f2ece5;
+  box-shadow: var(--shadow);
+}
+
+.consulting-brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.consulting-logo {
+  width: 88px;
+  height: 88px;
+  flex-shrink: 0;
+  border-radius: 20px;
+}
+
+.consulting-card h3 {
+  margin-bottom: 6px;
+  color: #fff9f1;
+}
+
+.consulting-card p,
+.consulting-tagline {
+  color: rgba(242, 236, 229, 0.82);
+}
+
+.consulting-tagline {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
 .publication-list {
   padding: 28px 28px 28px 50px;
 }
@@ -414,6 +454,7 @@ h3 {
   .signal-strip,
   .info-card,
   .project-card,
+  .consulting-card,
   .publication-list,
   .contact-panel {
     padding: 22px;
@@ -437,6 +478,11 @@ h3 {
 
   .profile-pic {
     height: 300px;
+  }
+
+  .consulting-brand {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .publication-list {
