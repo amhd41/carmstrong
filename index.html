@@ -2,101 +2,214 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Caleb James Armstrong</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <title>Caleb James Armstrong</title>
+  <meta
+    name="description"
+    content="Caleb James Armstrong researches human-centered AI, multimodal sensing, and resilient decision support systems."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
-
 <body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="wordmark" href="#top">Caleb James Armstrong</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-<header class="navbar">
-  <div class="nav-left">Caleb James Armstrong</div>
-  <nav class="nav-right">
-    <a href="#research">Research</a>
-    <a href="#projects">Projects</a>
-    <a href="#publications">Publications</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+    <main id="top">
+      <section class="hero reveal">
+        <div class="hero-copy">
+          <p class="eyebrow">Human-Centered AI Researcher</p>
+          <h1>Designing AI teammates that people can actually trust under pressure.</h1>
+          <p class="hero-text">
+            I study how humans coordinate with AI in learning, health, and safety-critical
+            settings using multimodal sensing, cognitive ergonomics, and adaptive interfaces.
+          </p>
 
-<section class="hero">
+          <div class="hero-actions">
+            <a href="https://scholar.google.com/citations?user=X41iFxEAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>
+            <a href="https://www.researchgate.net/profile/Mustafa-Demir-11" target="_blank" rel="noreferrer">ResearchGate</a>
+            <a href="https://www.linkedin.com/in/caleb-j-armstrong-md/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
 
-  <div class="hero-left">
-    <img src="Mustafa-Demir.jpg" alt="Caleb James Armstrong headshot" class="profile-pic" />
+          <ul class="hero-highlights" aria-label="Research focus areas">
+            <li>Human-AI teaming and uncertainty-aware decision support</li>
+            <li>Wearable sensing, eye tracking, and physiology-informed modeling</li>
+            <li>Adaptive systems for resilient performance in real-world operations</li>
+          </ul>
+        </div>
+
+        <aside class="hero-card reveal">
+          <img
+            src="assets/Mustafa-Demir.jpg"
+            alt="Portrait of Caleb James Armstrong"
+            class="profile-pic"
+          />
+          <div class="hero-card-content">
+            <p class="card-label">Current Focus</p>
+            <p class="card-text">
+              Building practical AI systems that respond to human attention, workload,
+              trust, and coordination dynamics in context.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="signal-strip reveal" aria-label="Affiliations">
+        <div class="signal-copy">
+          <p class="eyebrow">Academic Home</p>
+          <p>
+            My work bridges cognitive systems engineering, human factors, and interactive AI
+            across interdisciplinary research environments.
+          </p>
+        </div>
+        <div class="affiliations">
+          <div class="logo-card">
+            <img src="assets/asu.png" alt="Arizona State University" />
+          </div>
+          <div class="logo-card">
+            <img src="assets/tamu.png" alt="Texas A&amp;M University" />
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="content-section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Research</p>
+          <h2>Questions that sit at the edge of cognition, sensing, and machine support.</h2>
+        </div>
+        <div class="research-grid">
+          <article class="info-card">
+            <h3>Human-AI Teaming</h3>
+            <p>
+              How trust, uncertainty, and role adaptation shape coordination between people
+              and intelligent agents over time.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Multimodal State Inference</h3>
+            <p>
+              Using eye tracking, physiological measures, and interaction traces to model
+              cognitive load, fatigue, stress, and attention.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Resilient Interface Design</h3>
+            <p>
+              Designing adaptive interfaces that support practical decision-making in health,
+              learning, and safety-critical operations.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="content-section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Projects</p>
+          <h2>Applied research programs translating theory into systems people can use.</h2>
+        </div>
+        <div class="project-list">
+          <article class="project-card">
+            <h3>mHelp / Digital Health</h3>
+            <p>
+              Wearable stress detection and intervention support systems designed to translate
+              biosignals into timely, human-centered assistance.
+            </p>
+          </article>
+          <article class="project-card">
+            <h3>Human-AI Teammates</h3>
+            <p>
+              Adaptive human-machine interface behaviors for supervisory control settings where
+              timing, trust, and workload interact dynamically.
+            </p>
+          </article>
+          <article class="project-card">
+            <h3>Curiosity-Driven Learning</h3>
+            <p>
+              AI tutoring and curiosity-regulation frameworks that support discovery,
+              engagement, and deeper learning in complex environments.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="publications" class="content-section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Publications</p>
+          <h2>Recent work across AI teaming, learning systems, and coordination dynamics.</h2>
+        </div>
+        <ol class="publication-list">
+          <li>
+            Demir, M., Miratsky, J., Mishra, P., Nguyen, J., Chan, C., &amp; Singharoy, A. (2025).
+            <em>Exploring Artificial Intelligence Tutor Teammate Adaptability to Harness Discovery Curiosity and Promote Learning in Interactive Molecular Dynamics.</em>
+            Cognitive Computation.
+          </li>
+          <li>
+            Humr, S., Canan, M., &amp; Demir, M. (2025).
+            <em>A Quantum Probability Approach to Improving Human-AI Decision Making.</em>
+            Entropy, 27(2).
+          </li>
+          <li>
+            Rodriguez, L., Bustamante Orellana, C., Cooke, N., Demir, M., &amp; Kang, Y. (2024).
+            <em>Communication dynamics of a two-agent interaction model.</em>
+            Journal of Difference Equations and Applications.
+          </li>
+          <li>
+            Harrison, J. L., Zhou, S., Scalia, M. J., Grimm, D. A. P., Demir, M., et al. (2024).
+            <em>Communication Strategies in Human-Autonomy Teams During Technological Failures.</em>
+            Human Factors.
+          </li>
+          <li>
+            Grimm, D. A. P., Gorman, J. C., Cooke, N. J., Demir, M., &amp; McNeese, N. J. (2023).
+            <em>Dynamical Measurement of Team Resilience.</em>
+            Journal of Cognitive Engineering and Decision Making.
+          </li>
+          <li>
+            Demir, M., Cohen, M., Johnson, C. J., Chiou, E. K., &amp; Cooke, N. J. (2022).
+            <em>Interpersonal Coordination Dynamics and Team Effectiveness.</em>
+            IJHCI.
+          </li>
+          <li>
+            Tendhufeld, N., Demir, M., &amp; de Visser, E. (2022).
+            <em>Assessment of Trust in Automation in the Real World.</em>
+            JCEDM.
+          </li>
+          <li>
+            Demir, M., McNeese, N. J., &amp; Cooke, N. J. (2020).
+            <em>Understanding Human-Robot Teams in Light of All-Human Teams.</em>
+            IJHCS.
+          </li>
+        </ol>
+      </section>
+
+      <section id="contact" class="content-section reveal">
+        <div class="contact-panel">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Interested in collaboration, research, or invited talks?</h2>
+          </div>
+          <a class="contact-link" href="mailto:amhd@tamu.edu">amhd@tamu.edu</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Caleb James Armstrong</p>
+    </footer>
   </div>
 
-  <div class="hero-right">
-    <div class="buttons">
-      <a href="https://scholar.google.com/citations?user=X41iFxEAAAAJ" target="_blank">Google Scholar</a>
-      <a href="https://www.researchgate.net/profile/Mustafa-Demir-11" target="_blank">ResearchGate</a>
-      <a href="https://www.linkedin.com/in/caleb-j-armstrong-md/" target="_blank">LinkedIn</a>
-    </div>
-
-    <p>
-      I work on <strong>human-centered AI</strong>, cognitive ergonomics, and multimodal sensing
-      (e.g., eye tracking, physiology, interaction logs) to design practical,
-      trustworthy systems for learning, health, and safety-critical operations.
-    </p>
-
-    <p>
-      My research examines how people coordinate with AI teammates under uncertainty—
-      how attention, cognitive load, and interaction dynamics evolve over time—
-      and how adaptive interfaces can support resilient performance in real-world contexts.
-    </p>
-
-    <div class="affiliations">
-      <div class="logo-card">
-        <img src="asu.png" alt="Arizona State University" />
-      </div>
-      <div class="logo-card">
-        <img src="tamu.png" alt="Texas A&M University" />
-      </div>
-    </div>
-  </div>
-
-</section>
-
-<section id="research" class="section">
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Human–AI teaming, adaptive decision support, trust & uncertainty</li>
-    <li>Nonlinear dynamics, time-series analysis, mixed models</li>
-    <li>Wearable sensing, stress & fatigue inference, cognitive state modeling</li>
-  </ul>
-</section>
-
-<section id="projects" class="section">
-  <h2>Selected Projects</h2>
-  <ul>
-    <li><strong>mHelp / Digital Health</strong> — wearable stress detection & intervention support</li>
-    <li><strong>Human–AI Teammates</strong> — adaptive HMI behaviors in supervisory control</li>
-    <li><strong>Curiosity-Driven Learning</strong> — AI curiosity-regulation frameworks</li>
-  </ul>
-</section>
-
-<section id="publications" class="section">
-  <h2>Selected Publications</h2>
-  <ol>
-    <li>Demir, M., Miratsky, J., Mishra, P., Nguyen, J., Chan, C., & Singharoy, A. (2025). <em>Exploring Artificial Intelligence Tutor Teammate Adaptability to Harness Discovery Curiosity and Promote Learning in Interactive Molecular Dynamics.</em> Cognitive Computation.</li>
-    <li>Humr, S., Canan, M., & Demir, M. (2025). <em>A Quantum Probability Approach to Improving Human–AI Decision Making.</em> Entropy, 27(2).</li>
-    <li>Rodriguez, L., Bustamante Orellana, C., Cooke, N., Demir, M., & Kang, Y. (2024). <em>Communication dynamics of a two-agent interaction model.</em> Journal of Difference Equations and Applications.</li>
-    <li>Harrison, J. L., Zhou, S., Scalia, M. J., Grimm, D. A. P., Demir, M., et al. (2024). <em>Communication Strategies in Human-Autonomy Teams During Technological Failures.</em> Human Factors.</li>
-    <li>Grimm, D. A. P., Gorman, J. C., Cooke, N. J., Demir, M., & McNeese, N. J. (2023). <em>Dynamical Measurement of Team Resilience.</em> Journal of Cognitive Engineering and Decision Making.</li>
-    <li>Demir, M., Cohen, M., Johnson, C. J., Chiou, E. K., & Cooke, N. J. (2022). <em>Interpersonal Coordination Dynamics and Team Effectiveness.</em> IJHCI.</li>
-    <li>Tendhufeld, N., Demir, M., & de Visser, E. (2022). <em>Assessment of Trust in Automation in the Real World.</em> JCEDM.</li>
-    <li>Demir, M., McNeese, N. J., & Cooke, N. J. (2020). <em>Understanding Human–Robot Teams in Light of All-Human Teams.</em> IJHCS.</li>
-  </ol>
-</section>
-
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:amhd@tamu.edu">amhd@tamu.edu</a></p>
-</section>
-
-<footer>
-  © 2026 Caleb James Armstrong
-</footer>
-
-<script src="site.js"></script>
+  <script src="assets/site.js"></script>
 </body>
 </html>

@@ -1,37 +1,31 @@
 (function () {
-  // Footer year
-  const y = document.getElementById("year");
-  if (y) y.textContent = new Date().getFullYear();
+  const year = document.getElementById("year");
+  if (year) {
+    year.textContent = new Date().getFullYear();
+  }
 
-  // Theme
-  const root = document.documentElement;
-  const btn = document.getElementById("themeToggle");
-  const icon = btn?.querySelector(".toggle-icon");
-  const text = btn?.querySelector(".toggle-text");
+  const revealItems = document.querySelectorAll(".reveal");
+  if (!("IntersectionObserver" in window) || revealItems.length === 0) {
+    revealItems.forEach((item) => item.classList.add("is-visible"));
+    return;
+  }
 
-  function setTheme(theme) {
-    if (theme === "light") {
-      root.setAttribute("data-theme", "light");
-      if (icon) icon.textContent = "☀️";
-      if (text) text.textContent = "Light";
-    } else {
-      root.removeAttribute("data-theme");
-      if (icon) icon.textContent = "🌙";
-      if (text) text.textContent = "Dark";
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.18,
+      rootMargin: "0px 0px -32px 0px",
     }
-    localStorage.setItem("theme", theme);
-  }
+  );
 
-  const saved = localStorage.getItem("theme");
-  if (saved === "light" || saved === "dark") {
-    setTheme(saved);
-  } else {
-    // default: dark
-    setTheme("dark");
-  }
-
-  btn?.addEventListener("click", () => {
-    const isLight = root.getAttribute("data-theme") === "light";
-    setTheme(isLight ? "dark" : "light");
+  revealItems.forEach((item, index) => {
+    item.style.transitionDelay = `${index * 70}ms`;
+    observer.observe(item);
   });
 })();
